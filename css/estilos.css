@@ -1,0 +1,102 @@
+body {
+    background-image: url("../img/BackgroundImage.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#header {
+    padding: 25px 40px 0 40px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#menu ul li:last-child {
+    margin-right: 0;
+}
+
+#menu a {
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #343944;
+    text-decoration: none;
+    line-height: 43px;
+}
+
+#menu a.active{
+    font-weight: 600;
+}
+
+#socials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+#socials ul li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+#socials a {
+    line-height: 43px;
+    display: block;
+    padding-top: 3px;
+}
+
+#titulo {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+#titulo .name {
+    color: #00FFB2;
+}
+
+#subtitulo {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+#central {
+    padding-bottom: 60px;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.botao {
+    padding: 15px 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white; 
+    border-radius: 4px;
+}
+
+.botao:hover{
+    color: black;
+    background-color: white;
+}

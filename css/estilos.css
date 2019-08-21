@@ -1,10 +1,14 @@
 body {
-    background-image: url("../img/BackgroundImage.jpg");
+    background-color: #363B47;
     background-size: cover;
     background-position: center;
     padding: 0;
     margin: 0;
     min-height: 100vh;
+}
+
+body.home{
+    background-image: url("../img/BackgroundImage.jpg");
 }
 
 #header {
@@ -31,9 +35,13 @@ body {
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    color: #343944;
+    color: white;
     text-decoration: none;
     line-height: 43px;
+}
+
+#menu.menudark a{
+    color: #363B47;
 }
 
 #menu a.active{
@@ -85,18 +93,68 @@ body {
     text-align: center;
 }
 
-.botao {
-    padding: 15px 25px;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    border: 1px solid white; 
-    border-radius: 4px;
+#menu a:hover{
+    color: black;
+    background-color: #00FFB2;
 }
 
-.botao:hover{
-    color: black;
-    background-color: white;
+#centro {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+#centro .titulo2{
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 80px;
+    margin-bottom: 55px;
+    
+}
+
+.underline{
+    border-bottom: 3px solid #00FFB2;
+}
+
+#centro .subtitulo2{
+    font-size: 16px;
+    max-width: 550px;
+    margin: 0 auto;
+    font-weight: 200;
+}
+
+#centro .subtitulo2 p{
+    margin: 0;
+}
+
+h1 span{
+    padding-bottom: 16px;
+}
+
+.icon {
+    width: 112px;
+    height: 112px;
+    padding-top: 20px;
+}
+
+.icones{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.icones h1{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 22px; 
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+.icones p{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }

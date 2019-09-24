@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+
 body {
     background-color: #363B47;
     background-size: cover;
@@ -5,6 +8,9 @@ body {
     padding: 0;
     margin: 0;
     min-height: 100vh;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 body.home{
@@ -33,7 +39,6 @@ body.home{
 
 #menu a {
     text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: white;
     text-decoration: none;
@@ -67,7 +72,6 @@ body.home{
 }
 
 #titulo {
-    font-family: "Roboto", sans-serif;
     font-size: 35px;
     color: white;
     margin-top: 40px;
@@ -79,7 +83,6 @@ body.home{
 }
 
 #subtitulo {
-    font-family: "Roboto", sans-serif;
     font-size: 20px;
     color: white;
     font-weight: 300;
@@ -99,10 +102,13 @@ body.home{
 }
 
 #centro {
-    font-family: "Roboto", sans-serif;
     color: white;
     text-align: center;
+}
 
+#centro.contacts{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 #centro .titulo2{
@@ -110,7 +116,7 @@ body.home{
     font-weight: 300;
     margin-top: 80px;
     margin-bottom: 55px;
-    
+    text-transform: uppercase;
 }
 
 .underline{
@@ -118,7 +124,8 @@ body.home{
 }
 
 #centro .subtitulo2{
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 28px;
     max-width: 550px;
     margin: 0 auto;
     font-weight: 200;
@@ -140,21 +147,54 @@ h1 span{
 
 .icones{
     text-align: center;
-    padding-top: 15px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.icones .grid-33{
+    padding: 0 30px;
 }
 
 .icones h1{
-    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 22px; 
     font-weight: 100;
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 .icones p{
-    font-family: "Roboto", sans-serif;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 26px;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+/**
+    RESPONSIVE
+ */
+@media only screen and (max-width: 600px) {
+    #header {
+        padding: 25px 10px 0 10px;
+    }
+    #logo,
+    #menu ul{
+        text-align: center;
+    }
+    #menu{
+        margin-top: 20px;
+    }
+    #menu ul li{
+        margin: 0 5px;
+    }
+    #central {
+        margin-top: 5vh;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #centro {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
